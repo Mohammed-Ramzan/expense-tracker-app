@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="progress-bar-container">
+                <div class="progress-label-container">
+                    <div class="progress-label" id="progress-label">0%</div>
+                    <div class="progress-income" id="progress-income"><span>Target:</span> <span>27400</span></div>
+                    <div class="progress-total" id="progress-total"><span>Total:</span> <span class="progress-total-amount">0</span></div>
+                </div>
+                <div id="progress-bar"></div>
+                
+            </div>
+        </div>
+        
+        <div class="input-section">
+            <input type="number" id="income" placeholder="Income">
+            <textarea id="income-description" placeholder="Income Description"></textarea>
+    <button id="add-income-button">Add Income</button>
+
+        </div>
+
+        <div class="input-section">
+            <input type="number" id="expense" placeholder="Expense">
+            <textarea id="expense-description" placeholder="Expense Description"></textarea>
+    <button id="add-expense-button">Add Expense</button>
+        </div>
+        <div class="notes-label">
+            <div class="total-income-lable">Total Income: <span class="total-income">0</span></div>
+            <div class="total-expense-lable">Total Expense: <span class="total-expense">0</span></div>
+        </div>
+        <div class="notes-section">
+            <div class="income-notes" id="income-notes"></div>
+            <div class="expense-notes" id="expense-notes"></div>
+        </div>
+
+    
+<div class="button-section">
+    <button id="home-button">Home</button>
+    <button id="tracker-button">Tracker</button>
+</div>
+
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>

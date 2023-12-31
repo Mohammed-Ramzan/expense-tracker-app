@@ -1,0 +1,162 @@
+body {
+   margin: 0;
+   font-family: 'Arial', sans-serif;
+}
+
+.container {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.header {
+   text-align: center;
+}
+
+.progress-bar-container {
+   background-color: #f0f0f0;
+   height: 20px;
+   position: relative;
+   border-radius: 10px;
+   position: relative;
+   margin-top: 25px;
+}
+
+#progress-bar {
+   height: 100%;
+   width: 0;
+   background-color: green;
+   border-radius: 10px;
+   transition: width 0.5s ease-in-out;
+}
+
+.progress-label {
+   position: absolute;
+   top: 50%;
+   right: -10px;
+   transform: translate(-50%, -50%);
+   color: orange;
+   font-weight: bold;
+}
+
+.progress-income {
+   position: absolute;
+   top: -15px;
+   left: 55px;
+   transform: translate(-50%, -50%);
+   color: green;
+}
+.progress-total {
+    position: absolute;
+   top: -15px;
+   right: -20px;
+   transform: translate(-50%, -50%);
+   color: green;
+   border-bottom: 1px solid red;
+}
+.progress-income span:nth-child(1), .progress-total span:nth-child(1){
+   color: #000;
+   font-weight: bolder;
+}
+.progress-income span:nth-child(2){
+   color: red;
+   font-weight: bolder;
+}
+.progress-total span:nth-child(2){
+    color: green;
+   font-weight: bolder;
+}
+
+.input-section {
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+}
+
+input,
+textarea {
+   padding: 10px;
+   box-sizing: border-box;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+textarea {
+   resize: vertical;
+}
+.notes-label {
+    display: flex;
+   margin-top: 20px;
+   justify-content: space-between;
+}
+.notes-label .total-income {
+    color: #45a049;
+    font-weight: bolder;
+    border-bottom: 1px solid;
+}
+.notes-label .total-expense {
+    color: red;
+    font-weight: bolder;
+    border-bottom: 1px solid;
+}
+.notes-section {
+   display: flex;
+   margin-top: 10px;
+}
+
+.income-notes,
+.expense-notes {
+   flex: 0 0 43%;
+   padding: 10px;
+   margin-right: 2%;
+   background-color: #f0f0f0;
+   margin-bottom: 10px;
+   height: 19vh;
+   overflow-y: auto;
+   border-radius: 10px;
+   font-size: 12px;
+}
+
+.button-section {
+   text-align: center;
+   margin-top: 20px;
+}
+
+button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin: 5px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: bold;
+}
+
+button:hover {
+   background-color: #45a049;
+}
+
+#home-button, #tracker-button {
+   font-size: 14px;
+   padding: 10px 25px;
+   background-color: #fa8602;
+   border: 1px solid #f0f0f0;
+} 
+#home-button {
+   background-color: #3d3a3a;
+   position: absolute;
+   bottom: 10px;
+   left: 14px;
+}
+#tracker-button {
+   position: absolute;
+   bottom: 10px;
+   right: 14px;
+}
+#add-expense-button {
+   background-color: #c21313;
+}
